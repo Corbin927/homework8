@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<!-- root element -->
+<html>
+    <!-- head section -->
+    <head>
+        <!-- Webpage Title -->
+        <meta charset="UTF-8">
+        <meta name ="viweport" content ="width=device-width, initial-scale=1.0">
+        <title>
+            My portfolio
+        </title>
+        
+        <!-- external style sheet-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "styles.css">
+    <!--font styles for the body and heaers-->
+    <style>
+      h1{
+        font-family: 'Tangerine', serif;
+        font-size: 48px;
+      }
+      h2{
+        font-family:sans-serif;
+      }
+      h3{
+        font-family: 'Times New Roman', Times, serif;
+      }
+      body{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+    </style>
+    </head>
+
+    <!-- body section -->
+    <body>
+        <div class = "containers">
+        <!-- heading and SubHeading -->
+
+            <div class = "heading container-fluid bg-primary bg-gradient">
+                <div class = "row head bg-primary bg-gradient"><h1>Corbin Comber</h1></div>
+                <div class = "row head bg-primary bg-gradient"><h2>Aspiring Game Artist/ Game Producer<h2></div>
+            </div>
+        <!--nav_Bar-->
+            <nav class="sidebar navbar navbar-expand-lg bg-body-tertiary" id = "navigation_menu">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src = "brush.svg" alt = "brush icon" height = "30"/> Navigation Menu </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            My qualities
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#aboutme">About Me</a></li>
+                            <li><a class="dropdown-item" href="index.html#skills">Skills</a></li>
+                            <li><a class="dropdown-item" href="index.html#projects">projects</a></li>
+                            <li><a class="dropdown-item" href="index.html#education_experience">Education and Experience</a></li>
+                            <li><a class="dropdown-item" href="index.html#contact_info">Contact information</a></li>
+                            <li><a class="dropdown-item" href="index.html#summary">Summary</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                            <button class= "btn btn-warning" id = "resume"><a class="dropdown-item" href = "MyResume.pdf" download = "Corbin_Comber_Resume">
+                                                Download my resume
+                                            </a></button>
+                                        </li>
+                            </ul>
+                        </li>
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="search" aria-label="Check"/>
+                        <button class="btn btn-outline-success" type="submit">Check</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+            <!--main content-->
+            <div class = "maincontent">
+                <div class = "row">
+                    <section id = intro>    
+                    </section>
+                </div>
+                <!-- Introduction Paragraph -->
+                <div class = "row">
+                <section id = "aboutme">
+                    <h3><ins>About Me</ins></h3>
+                    <p>Currently i am a college obtaining my BA for Modern languages with an emphasis 
+                        in japanese and also obtaing a BA for Imersive media and Games. In 2027 i will be studying abroad in japan 
+                        and hopefully interning for a Video Game company. I eventually want to be able to produce some of the art that we see
+                        in the game industry and also have a goal to work in a translation or interpereter for English to Japanese and vice-versa.
+                    </p>
+                </section>
+                </div>
+                <!-- Skills section -->
+                <h3><ins>Skills</ins></h3>
+                <section class = "skill" id = "skills"></section>
+                    
+                <div class = "flex-card row">
+
+                    
+                    <!-- Soft skills card-->
+                    <!-- TODO 2: Bootstrap Prebuilt Card -->
+                    <div class="card col-sm-12" style="width: 18rem;">
+                        <img src="soft_skills.png" class="card-img-top" alt="flower image">
+                        <div class="card-body">
+                            <h5 class="card-title">Soft Skills</h5>
+                                <ul class = "card-text list-unstyled">
+                                    <li class = "list-item">communication</li>
+                                    <li class = "list-item">Supervision</li>
+                                    <li class = "list-item">Time-Management</li>
+                                    <li class = "list-item">Teamwork</li>
+                                </ul>
+                                <form class = "card-text">
+                                    <input class="text" id="addItem" placeholder="add an item"/>
+                                    <button class="btn-outline-success" id = "submit" type="button">Submit</button>
+                                </form>
+                        </div>
+                    </div>
+                    <!-- SoftWare card-->
+                    <!-- Bootstrap Prebuilt Card-->
+                    <div class="card col-sm-12" style="width: 18rem;">
+                        <img src="procreate.png" class="card-img-top" alt="flower image">
+                        <div class="card-body">
+                            <h5 class="card-title ">Software</h5>
+                                <ul class = "card-text list-unstyled">
+                                    <li>
+                                            Procreate
+                                        </li>
+                                        <li>
+                                            Blender
+                                        </li>
+                                        <!--adobe unordered list-->
+                                        <li><b>Adobe</b>
+                                            <ul>
+                                                <li>
+                                                    Animate
+                                                </li>
+                                                <li>
+                                                    Illustrator
+                                                </li>
+                                                <li>
+                                                    Photoshop
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                        <li>
+                                            Construct
+                                        </li>
+                                        <!--programming languages unordered list-->
+                                        <li><b>Programming languages</b>
+                                            <ul>
+                                                <li>
+                                                    Python
+                                                </li>
+                                                <li>
+                                                    C
+                                                </li>
+                                                <li>
+                                                    C++
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                </ul>
+                        </div>
+                    </div>
+                    <!-- Art Mediums card-->
+                    <!-- Bootstrap Prebuilt Card -->
+                    <div class="card col-sm-12" style="width: 18rem;">
+                    <img src="stary_night.png" class="card-img-top" alt="flower image">
+                    <div class="card-body">
+                    <h5 class="card-title">Art mediums</h5>
+                        <ul class = "card-text list-unstyled">
+                            <!--Sculpting Unordered list-->
+                            <li><b>Sculpting</b>
+                                <ul>
+                                    <li>
+                                        Air-dry clay
+                                    </li>
+                                    <li>
+                                        Wire
+                                    </li>
+                                    <li>
+                                        Plaster
+                                    </li>
+                                    <li>
+                                        Cardboard
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--Traditional unordered list-->
+                            <li><b>Traditional</b>
+                                <ul>
+                                    <li>
+                                        Graphite
+                                    </li>
+                                    <li>
+                                        Charcoal
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                
+                </div>
+                </section>
+                <!-- Project Showcase -->
+                
+                <div class = "row">
+                <section id = "projects">
+                    
+                    <h3><ins>Projects</ins></h3>
+                    <div class = "project">
+                        
+                        <div class = "project_title"><h4>Sculpting</h4></div>
+                        <div class = "description">
+                            <p> My second year of college i was enrolled in a sculpting class in which we worked with materials such as: Air-dry Clay, Plaster, Cardboard, wire etc...
+                                Throughout this class i was able to make, A face and a bowling pin, aswell as a small interactable moped with the cardboard, with the Air-Dry clay
+                                i made a Strawberry, with wire i made a trumpet, and with plaster and woden dowels i made a small abstract Sculpture.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!--Cards for physical projects-->
+                    <div class = "flex-card row">
+                        <!--Bootstrap Prebuilt Card for strawberry sculpture-->
+                        <div class="card project col-sm-12" id = "project1" style="width: 18rem;">
+                        <img src="./sculpting/strawberry.png" class="card-img-top" alt="flower image">
+                        <div class="card-body project">
+                        <h5 class="card-title">Air-Dry clay</h5>
+                        <p class="card-text"></p>
+                        </div>
+                        </div>
+                        <!--Bootstrap Prebuilt Card for pheobe sculpture-->
+                        <div class="card project col-sm-12" id = "project2" style="width: 18rem;">
+                        <img src="./sculpting/moped.png" class="card-img-top" alt="flower image">
+                        <div class="card-body project">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"></p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class = "project">
+                        <div class = "project_title"><h4>Digital-art</h4></div>
+                        <div class = "description">
+                            <p>
+                                In my spare time i work with Digital Art, I've worked with Programs such as Procreate, Adobe-Animate and Adobe-Photoshop, i have also worked breifly with blender.
+                                I mainly have been drawing portraits, but i am working on expanding my horizons with environmental design. Ive worked on a small animation briefly in my New-media Foundations class
+                                and made a digital sculpture of Pheobe bridgers which i was able to 3d print out later.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!--Cards for digital projects-->
+                    <div class = "flex-card row">
+                        <!--Bootstrap Prebuilt Card for procreate drawing-->
+                        <div class="card project col-sm-12" id = "project3" style="width: 18rem;">
+                        <img src="./digital/woman.png" class="card-img-top" alt="flower image">
+                        <div class="card-body project">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"></p>
+                        </div>
+                        </div>
+                        <!--Bootstrap Prebuilt Card for pheobe sculpture-->
+                        <div class="card project col-sm-12" id = "project4" style="width: 18rem;">
+                        <img src="./digital/pheobe.png" class="card-img-top" alt="flower image">
+                        <div class="card-body project">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"></p>
+                        </div>
+                        </div>
+                        <div class="card project col-sm-12" id = "project5" style="width: 18rem;">
+                        <img src="./digital/workInProgress.png" class="card-img-top" alt="flower image">
+                        <div class="card-body project">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"></p>
+                        <p class="card-text" id = "ongoing"></p>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+                </div>
+
+                
+                <!-- Education and Experience -->
+                <div class = "row e_e">
+                <section id = education_experience>
+                    <h3><ins>Education and Experience</ins></h3>
+                    <section id = "tables"class = "table">
+                    </section>
+                </section>
+                </div>
+                <!-- Contact info -->
+                <div class = "row">
+                <h3>
+                    summary
+                </h3>
+                <section id = "summary">
+                    <div class = "row" id = "summary">
+                        <div class = "summary_element col-lg-4 col-sm-12">
+                            <h4>skills</h4>
+
+                            <p>
+                                i am skilled in many art softwares like adobe, and procreate. i also have experience with customers from a resaurant perspective.
+                            </p>
+                        </div>
+                        <div class = "summary_element col-lg-4 col-sm-12">
+                            <h4>projects</h4>
+                            <p>
+                                over the course of my time in and outside of colledge i have sculpted with numerous materials and also explored more into the digital art side of the industry.
+                            </p>
+                        </div>
+                        <div class = "summary_element col-lg col-sm-12">
+                            <h4>experience</h4>
+                            <p>
+                                i have mainly worked in the restaurant industry for most of my life after i was old enough for a job. however having a job that puts me in an adminastative position ive found to be a great experience at exploring other industries
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                </div>
+
+            </div>
+            <!--footer-->
+            <div class = "footer container-fluid bg-primary">
+
+                <section id = contact_info>
+
+                    <div class="row foot bg-primary bg-gradient"><h3><ins>Contact Information</ins></h3></div>
+                    <div class = "row foot bg-primary bg-gradient">
+                        <p class = "lead"> 
+                            <b>Phone number</b>: <a class = "info" href = "callto:6238245472">623-824-5472</a><br />
+                            <b>email</b>: <a class = "info" href = "mailto:cmc2477@nau.edu">cmc2477@nau.edu</a><br/>
+                            <b>Git</b>: <a class = "info" href = "https://github.com/Corbin927">Profile</a>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    <script src = "app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,230 @@
+/* page layout */
+/* page layout */
+.containers{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        "sidebar" 
+        "main"
+    ;
+    width: fit-content;
+    margin: 0;
+}
+
+
+.container-fluid{
+    background-color:#38a172;
+}
+div{
+    background-color: #F2F2F2;
+    border: 2px solid black;
+    text-align:center;
+    margin:5px;
+}
+.row{
+    border: none;
+    background-color:#b7d691;
+}
+.row.head{
+    border: none;
+    margin: 0;
+}
+.row.foot{
+    border: none;
+    margin: 0
+}
+/* part 4 heading */
+.heading{
+    /*size of the block*/
+    /*position*/
+    position: fixed;
+    /*mardin and padding*/
+    /*font size and bg-c*/
+    font-size: smaller;
+    z-index: 1;
+}
+
+h1{
+    margin: 0px;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: #b0e295;
+    margin-top: 150px;
+    
+}
+
+
+.maincontent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: none;
+    /*other properties*/
+    grid-area: main;
+    background-color: #b7d691;
+    padding:10px;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 180px;
+}
+
+/*part 4 footer*/
+.footer{
+
+    /*position*/
+    position: fixed;
+    bottom: 0;
+    /*properties*/
+    font-size: large;
+    margin: 10px;
+}
+
+
+
+/* tables in education and experience  */
+tr
+{
+    background-color: #7e83c7ed!important;
+    color: rgb(248, 247, 252);
+}
+td
+{
+    padding: 20px;
+}
+#tables
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    border-color: black;
+}
+
+html{
+    background-color:white;
+}
+/* summary */
+#summary
+{
+    border: none;
+    background-color: #b7d691;
+}
+
+section{
+    margin: 0;
+}
+
+.summary_element
+{
+    background-color: #D96868;
+    text-align: center;
+}
+/*skills*/
+/*making the skills section a grid*/
+.info{
+    color:black;
+}
+.info:hover{
+    background-color: bisque;
+}
+/*decorating list elements*/
+.list
+{
+    display: flex;
+    flex-direction: co;
+    border: 1px solid black;
+    background-color: #689D4B;
+    color:white;
+    padding: 0px;
+
+} 
+
+/* project grid*/
+.project
+{
+    /*display the project as a grid*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    /*other properties*/
+    border: none;
+    background-color: #b7d691;
+    padding:0px;
+    color: white;
+
+}
+
+.description
+{
+    /*start and span*/
+    /*inside display of flex*/
+    display: flex;
+    /*set to grow and to shrink*/
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-items: center;
+    justify-content:center;
+    /*other properties*/
+    padding: 0px;
+    background-color:#D96868 ;
+    
+}
+
+.project_title
+{
+    display: flex;
+    /*flex shrink and other properties*/
+    flex-shrink: 1;
+    align-items: center;
+    justify-content:center;
+    padding:0px;
+    background-color:#D96868;
+}
+
+
+img{
+    float: right;
+    transition: opacity 3s,
+
+}
+img:hover{
+    opacity: 90%;
+}
+
+
+/*card bodys*/
+.title-s{
+    border:none;
+    background-color: rgba(55, 184, 184, 0.081);
+
+}
+.flex-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color:#b7d691;
+}
+.card{
+    background-color: rgba(55, 184, 184, 0.647);
+    transition: transform 3s;
+}
+.card-body{
+    background-color: rgb(127, 127, 193);
+}
+.card.project{
+    background-color: #d968686e;
+}
+.card-body.project{
+    background-color: #D96868;
+}
+
+/*hover effects*/
+.card:hover{
+    transform:scale(1.2);
+    z-index: 1;
+}
+
